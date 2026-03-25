@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         .btn-login {
-            background: linear-gradient(135deg, $primary-color, darken($primary-color, 10%));
+            background: linear-gradient(135deg, $primary-color, color.adjust($color, $lightness: -10%));
             color: white;
             padding: 0.6rem 1.4rem;
             border-radius: 50px;
