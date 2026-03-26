@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const charactercontroller = require('../controllers/charactercontroller');
+const characterController = require('../controllers/characterController');
 
-router.get('/', charactercontroller.getHomePage);
+router.get('/', characterController.getHomePage);
 
 module.exports = router;
