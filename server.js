@@ -3,7 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const path = require('path');
 
-const characterroutes = require('./routes/characterRoutes');
+const characterRoutes = require('./routes/characterRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
