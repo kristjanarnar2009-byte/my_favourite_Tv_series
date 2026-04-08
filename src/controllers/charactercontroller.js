@@ -1,8 +1,8 @@
-const characterService = require('../services/characterService');
+import { getAllCharacters, getCharactersById } from '../services/characterService';
 
-const getHomePage = async (req, res) => {
+const getHomePage = async (_req, res) => {
     try {
-        const characters = await characterService.getAllCharacters();
+        const characters = await getAllCharacters();
         
         res.render('index', {
             title: 'my little pony vefurinn',
@@ -17,7 +17,7 @@ const getHomePage = async (req, res) => {
 const getCharacterDetails=async(req, res)=>{
     try{
       const id = req.params.id;
-      const character=await characterService.getCharactersById(id);
+      const character=await getCharactersById(id);
 
       if(!character){
         return res.status(404).send('Úps! characterin fannst ekki.');
@@ -33,7 +33,7 @@ const getCharacterDetails=async(req, res)=>{
     }
 };
 
-module.exports = {
+export default {
  getHomePage,
  getCharacterDetails
 };
