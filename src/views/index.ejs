@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+
+    <section class="earth-section">
+        <div class="earth-content">
+            <h2>Velkominn á My little pony vefsíðuna</h2>
+            <p>Hérna getur þú fundið upplýsingar um My little pony og allskonar hluti.</p>
+            <a href="/hlutir" class="btn-primary">Skoða allskynshlutir</a>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h3>Einhvað</h3>
+        <div class="card-grid">
+            <% if (characters && characters.length > 0) { %>
+                <% characters.forEach(character => { %>
+                    <div class="pegasus-card">
+                        <div class="card-img placeholder-img"></div>
+                        <div class="card-info">
+                            <h4><%= character.name %></h4>
+                            <p><%= character.description %></p>
+                        </div>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <div class="pegasus-card">
+                    <div class="card-info">
+                        <h4>Funny things</h4>
+                        <p>Something that is funny, but not funny.</p>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </section>
+
+<%- include('partials/footer') %>
