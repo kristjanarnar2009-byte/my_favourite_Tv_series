@@ -1,6 +1,6 @@
 const characterService = require('../services/characterService');
 
-const getHomePage = async (req, res) => {
+const getHomePage = async (_req, res) => {
     try {
         const characters = await characterService.getAllCharacters();
         
