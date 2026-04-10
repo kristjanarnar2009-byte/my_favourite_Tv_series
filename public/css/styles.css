@@ -1,1 +1,17 @@
-{"version":3,"sourceRoot":"","sources":["../scss/main.scss","../scss/_variables.scss"],"names":[],"mappings":"AAEQ;AAER;EACI;EACA;EACA;;;AAGJ;EACI,aCHQ;EDIR,kBCPO;EDQP,OCVQ;EDWR;EACA;EACA;EACA;;;AAGJ;EACI,aCXW;;;ADcf;EACI,kBCnBK;EDoBL;EACA;EACA;EACA;EACA,YCjBS;EDkBT;EACA;EACA;EACA;;AAEA;EACI;EACA,OCtCQ;;ADyCZ;EACI;EACA;EACA;;AAEA;EACI;EACA,OC7CA;ED8CA;;AAGJ;EACI;EACA;EACA;EACA;;;AAKZ;EACI;EACA;EACA;;AAEA;EACI;EACA,kBCpEQ;EDqER;EACA;EACA;EACA;;;AAIR;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAGJ;EACI;EACA;EACA,YC7EK;;AD+EL;EACI;EACA;;AAGJ;EACI;;;AAKZ;EACI;EACA;EACA;EACA;EACA","file":"syles.css"}
+/* Error: There is no module with the namespace "color".
+ *    ,
+ * 54 |             background: linear-gradient(135deg, $primary-color, color.adjust($color, $lightness: -10%));
+ *    |                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   public\scss\main.scss 54:65  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: There is no module with the namespace "color".\a    \2577 \a 54 \2502              background: linear-gradient(135deg, $primary-color, color.adjust($color, $lightness: -10%));\d\a    \2502                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   public\\scss\\main.scss 54:65  root stylesheet';
+}
