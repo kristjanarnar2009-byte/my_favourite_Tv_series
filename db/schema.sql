@@ -8,7 +8,6 @@ CREATE TABLE IF NOT EXISTS characters(
 
 TRUNCATE TABLE characters RESTART IDENTITY;
 
-<<<<<<< HEAD
 INSERT INTO characters (name, type, description) VALUES
 ('Twilight sparkle', 'Alicorn', 'A princess that has allot to learn.'),
 ('Pinkie pie', 'Earth pony', 'A energetic friend.'),
