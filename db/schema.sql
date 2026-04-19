@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS characters(
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     type VARCHAR(255),
-    description VARCHAR(255),
+    description VARCHAR(255)
 );
 
 TRUNCATE TABLE characters RESTART IDENTITY;
