@@ -3,7 +3,6 @@ CREATE TABLE IF NOT EXISTS characters(
     name VARCHAR(255) NOT NULL,
     type VARCHAR(255),
     description VARCHAR(255),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
 );
 
 TRUNCATE TABLE characters RESTART IDENTITY;
