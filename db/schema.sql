@@ -5,8 +5,6 @@ CREATE TABLE IF NOT EXISTS characters(
     description VARCHAR(255)
 );
 
-DROP TABLE IF EXISTS characters;
-
 TRUNCATE TABLE characters RESTART IDENTITY;
 
 INSERT INTO characters (name, type, description) VALUES
