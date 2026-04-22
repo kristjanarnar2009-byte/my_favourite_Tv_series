@@ -3,11 +3,12 @@ const characterService = require('../services/characterService');
 const getHomePage = async (req, res) => {
     try {
         const characters = await characterService.getAllCharacters();
-        
+        console.log('hi')
         res.render('index', {
             title: 'my little pony vefurinn',
             characters: characters
         });
+        console.log('helo')
     } catch (error) {
         console.error('Error fetching characters:', error);
         res.status(500).send('Internal Server Error');
