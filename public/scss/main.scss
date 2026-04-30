@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 
         .btn-login {
             background: linear-gradient(135deg, $primary-color, darken($primary-color, 10%));
-            color: white;
+            color: rgb(204, 31, 140);
             padding: 0.6rem 1.4rem;
             border-radius: 50px;
         }
@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
     .btn-primary {
         display: inline-block;
         background-color: $primary-color;
-        color: white;
+        color: rgb(255, 57, 57);
         padding: 1rem 2rem;
         text-decoration: none;
         border-radius: 50px;
@@ -86,13 +86,13 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .pegasus-card {
-        background: white;
+        background: rgb(220, 157, 31);
         border-radius: 12px;
         box-shadow: $box-shadow;
 
         .placeholder-img {
             height: 200px;
-            background: linear-gradient(45deg, #f0f0f0, #eaeaea);
+            background: linear-gradient(45deg, #3027a4, #ce580e);
         }
 
         .card-info {
@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-footer {
     background-color: #2d3436;
-    color: #b2bec3;
+    color: #249cd0;
     text-align: center;
     padding: 2rem;
     margin-top: auto;

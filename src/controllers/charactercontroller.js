@@ -34,7 +34,40 @@ const getCharacterDetails=async(req, res)=>{
     }
 };
 
+const getAddCharacterForm = (req, res) => {
+  res.render('add-character', {
+      name: 'Sitja inn nafn'
+  });
+};
+
+const createNewCharacter = async (req, res) => {
+    try {
+        const { name, type, description } = req.body;
+
+        if (!name) {
+          return res.status(400).send(
+            'Nafn character má ekki vera tómur!'
+          );
+        }
+      
+        const newCharacter = await characterService.createCharacter(
+          name,
+          type,
+          description
+        );
+
+        res.redirect(`/character/${newCharacter.id}`);
+    } catch (error) {
+        console.error('Villa við að gera nafn fyrir Character:', error);
+        res.status(500).send(
+          'Kerfisvilla - Tókst ekki að vista nafn'
+        ); 
+    }
+};
+
 module.exports = {
  getHomePage,
- getCharacterDetails
+ getCharacterDetails,
+ getAddCharacterForm,
+ createNewCharacter
 };
