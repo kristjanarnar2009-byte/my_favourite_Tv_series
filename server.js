@@ -23,6 +23,10 @@ app.get('/add-character', (req, res) => {
     res.render('add-character', { title: 'Bæta við persónu' });
 });
 
+app.get('/innskraning', (req, res) => {
+    res.render('innskraning');
+});
+
 app.listen(PORT, () => {
     console.log(`Server keyrir á http://localhost:${PORT}`);
 });

@@ -10,4 +10,8 @@ router.post('/character/ny', characterController.createNewCharacter);
 
 router.get('/character/:id', characterController.getCharacterDetails);
 
+router.get('/innskraning', (req, res) => {
+    res.render('innskraning');
+});
+
 module.exports = router;
