@@ -36,7 +36,8 @@ const getCharacterDetails=async(req, res)=>{
 
 const getAddCharacterForm = (req, res) => {
   res.render('add-character', {
-      name: 'Sitja inn nafn'
+    title: 'Bæta við persónu',  
+    name: 'Sitja inn nafn'
   });
 };
 
