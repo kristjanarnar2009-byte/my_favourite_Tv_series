@@ -54,7 +54,8 @@ const createNewCharacter = async (req, res) => {
         const newCharacter = await characterService.createCharacter(
           name,
           type,
-          description
+          description,
+          "mlp.jpg"
         );
 
         res.redirect(`/character/${newCharacter.id}`);

@@ -5,6 +5,9 @@ CREATE TABLE IF NOT EXISTS characters(
     description VARCHAR(255)
 );
 
+ALTER TABLE characters
+ADD COLUMN image TEXT;
+
 TRUNCATE TABLE characters RESTART IDENTITY;
 
 INSERT INTO characters (name, type, description) VALUES

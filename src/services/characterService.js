@@ -15,14 +15,14 @@ const getCharactersById = async(id) => {
     return result.rows[0];
 };
 
-const createCharacter = async (name, type, description) => {
+const createCharacter = async (name, type, description, image) => {
     const sql = `
-        INSERT INTO characters (name, type, description)
-        VALUES ($1, $2, $3)
+        INSERT INTO characters (name, type, description, image)
+        VALUES ($1, $2, $3, $4)
         RETURNING *;
     `;
     
-    const values = [name, type, description];
+    const values = [name, type, description, image];
     const result = await db.query(sql, values);
 
     return result.rows[0];

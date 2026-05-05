@@ -14,7 +14,12 @@
             <% if (characters && characters.length > 0) { %>
                 <% characters.forEach(character => { %>
                     <div class="pegasus-card">
-                        <div class="card-img placeholder-img"></div>
+                        
+                        <img class="card-img"
+                            src="/images/<%= character.image %>"
+                            alt="<%= character.description %>">
+                        
+                        
                         <div class="card-info">
                             <h4><%= character.name %></h4>
                             <p><%= character.description %></p>
