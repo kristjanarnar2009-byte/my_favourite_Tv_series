@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:Wght@500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #cc1db5;
+  color: #2d3436;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Outfit", sans-serif;
+}
+
+.main-header {
+  background-color: rgba(109, 68, 167, 0.95);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgb(255, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+}
+.main-header .logo h1 {
+  font-size: 1.8rem;
+  color: rgb(97, 200, 229);
+}
+.main-header .main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.main-header .main-nav ul li a {
+  text-decoration: none;
+  color: #2d3436;
+  font-weight: 500;
+}
+.main-header .main-nav ul .btn-login {
+  background: linear-gradient(135deg, rgb(97, 200, 229), rgb(53.2065217391, 184.7554347826, 221.7934782609));
+  color: rgb(204, 31, 140);
+  padding: 0.6rem 1.4rem;
+  border-radius: 50px;
+}
+
+.earth-section {
+  background: linear-gradient(135deg, rgba(185, 160, 63, 0.1) rgba(97, 200, 229, 0.1));
+  text-align: center;
+  padding: 6rem 1rem;
+}
+.earth-section .btn-primary {
+  display: inline-block;
+  background-color: rgb(97, 200, 229);
+  color: rgb(255, 57, 57);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.featured {
+  padding: 4rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.featured .card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.featured .pegasus-card {
+  background: rgb(220, 157, 31);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgb(255, 0, 0);
+}
+.featured .pegasus-card .placeholder-img {
+  height: 200px;
+  background: linear-gradient(45deg, #3027a4, #ce580e);
+}
+.featured .pegasus-card .card-info {
+  padding: 1.5rem;
+}
+
+.main-footer {
+  background-color: #2d3436;
+  color: #249cd0;
+  text-align: center;
+  padding: 2rem;
+  margin-top: auto;
+}
+
+.logo {
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
