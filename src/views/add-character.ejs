@@ -1,0 +1,63 @@
+<%- include('partials/header') %>
+
+<section class="featured">
+    <div style="
+        max-width: 600px;
+        margin: 0 auto;
+        background: white;
+        padding: 2.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    ">
+        <h2 style="margin-bottom: 1.5rem; text-align: center;">
+            Mig langar að segja þér að mig lanagr að þú eyðir search history-inu þínu. NÚNA!!!!!!
+        </h2>
+
+        <form action="/character/ny" method="POST" style="
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        ">
+            <div>
+                <label for="name" style="
+                    font-weight: 600;
+                    display: block;
+                    margin-bottom: 0.5rem;
+                ">Nafn Character</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="type">
+                    Tegund af kallinum
+                </label>
+                <input
+                    type="text"
+                    id="type"
+                    name="type"
+                >
+            </div>
+
+            <div>
+                <label for="description">
+                    Útskýring á characteranna
+                </label>
+                <input
+                    type="text"
+                    id="description"
+                    name="description"
+                >
+            </div>
+
+            <button type="submit" class="btn-primary">
+                Vista Character
+            </button>
+        </form>
+    </div>
+</section>
