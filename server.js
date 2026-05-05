@@ -17,6 +17,10 @@ app.use(express.urlencoded({ extended:true }));
 
 app.use('/', characterRoutes);
 
+app.get('/add-character', (req, res) => {
+    res.render('add-character', { title: 'Bæta við persónu' });
+});
+
 app.listen(PORT, () => {
     console.log(`Server keyrir á http://localhost:${PORT}`);
 });
