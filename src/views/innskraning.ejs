@@ -1,0 +1,63 @@
+<%- include('partials/header') %>
+
+<section class="featured">
+    <div style="
+        max-width: 600px;
+        margin: 0 auto;
+        background: rgb(110, 20, 159);
+        padding: 2.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    ">
+        <h2 style="margin-bottom: 1.5rem; text-align: center;">
+            Hérna getur þú Búið til nýjar persónur.
+        </h2>
+
+        <form action="/character/ny" method="POST" style="
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        ">
+            <div>
+                <label for="name" style="
+                    font-weight: 600;
+                    display: block;
+                    margin-bottom: 0.5rem;
+                ">Netfang</label>
+
+                <input
+                    type="gmail"
+                    id="gmail"
+                    name="gmail"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="type">
+                    Lykillorð
+                </label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                >
+            </div>
+
+            <div>
+                <label for="">
+                    Confirm Lykillorð
+                </label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                >
+            </div>
+
+            <button type="submit" class="btn-primary">
+                Innskráning
+            </button>
+        </form>
+    </div>
+</section>
